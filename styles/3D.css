@@ -1,6 +1,7 @@
 
     body { 
         background: rgba(192, 192, 192, .4); 
+        background-image: url(/assets/background.jpg);
     }
 
     h1 { 
