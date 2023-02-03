@@ -3,8 +3,8 @@
     }
 
     div {
-        padding: .10em;
-        background-color: rgba(0, 255, 100, .4);
+        padding: .25em;
+        background-color: rgba(193, 193, 193, .4);
     }
 
     h1 { 
@@ -21,4 +21,5 @@
 
     p {
         font-family: sans-serif;
+        font-size: 100%;
     }
