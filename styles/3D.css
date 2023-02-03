@@ -1,5 +1,6 @@
     body { 
         background: url(/assets/background.webp);
+        background-repeat: no-repeat;
     }
 
     div {
