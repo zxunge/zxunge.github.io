@@ -1,6 +1,10 @@
     body { 
-        background-image: url(/assets/background.webp);
-        background-color: rgba(0, 255, 100, .4);
+        background: url(/assets/background.webp);
+    }
+
+    div {
+        padding: .10em;
+        color: rgba(0, 255, 100, .4);
     }
 
     h1 { 
