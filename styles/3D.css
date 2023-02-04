@@ -2,10 +2,10 @@
         background-image: url(/assets/background.webp);
         background-repeat: no-repeat;
         background-position: center;
+        padding: 1em;
     }
 
     div {
-        padding: 10em;
         background-color: rgba(195, 195, 195, .4);
     }
 
