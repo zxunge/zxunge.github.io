@@ -1,12 +1,6 @@
     body { 
-        background-image: url(/assets/background.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 2.5em;
-    }
-
-    .backpadding {
         background-color: rgba(230, 230, 230, .3);
+        padding: 2.5em;
     }
 
     h1 { 
