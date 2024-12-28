@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Enhanced Calculator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,20 +18,42 @@
             padding: 20px;
             border-radius: 10px;
             background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .calculator:hover {
+            transform: scale(1.05);
         }
         .calculator input {
             width: 100%;
-            height: 40px;
+            height: 50px;
             text-align: right;
             margin-bottom: 10px;
-            font-size: 18px;
-            padding: 5px;
+            font-size: 24px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         .calculator button {
             width: 23%;
-            height: 40px;
+            height: 50px;
             margin: 1%;
             font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .calculator button:active {
+            background-color: #0056b3;
+        }
+        .calculator button.clear {
+            background-color: #DC3545;
+        }
+        .calculator button.clear:active {
+            background-color: #a71d2a;
         }
     </style>
 </head>
@@ -59,7 +81,12 @@
         <button onclick="calculate()">=</button>
         <button onclick="appendOperator('+')">+</button>
         <br>
-        <button onclick="clearDisplay()" style="width: 48%;">C</button>
+        <button onclick="calculateSqrt()">√</button>
+        <button onclick="appendOperator('**')">^</button>
+        <button onclick="insertPi()">π</button>
+        <button onclick="calculateLog()">log</button>
+        <br>
+        <button class="clear" onclick="clearDisplay()" style="width: 48%;">C</button>
     </div>
 
     <script src="script.js"></script>
