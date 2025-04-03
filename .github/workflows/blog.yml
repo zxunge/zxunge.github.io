@@ -2,7 +2,7 @@ name: deploy-blogs
 
 on:
   push:
-    branches: [ "blog" ]
+    branches: [ "blog", "main" ]
   workflow_dispatch:
 
 jobs:
@@ -20,6 +20,7 @@ jobs:
 
         git config --local user.email "3396563372@qq.com"
         git config --local user.name "zxunge"
+        ls
         git checkout blog
 
         COMMIT_INFO=$(git log -n 1 | tail -n 1)
