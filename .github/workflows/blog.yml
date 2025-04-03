@@ -26,6 +26,7 @@ jobs:
 
         cp -rf * ~/blogs/
         git checkout main
+        mkdir -p blogs
         cp -rf ~/blogs/* ./blogs/
         git commit -am "${COMMIT_INFO}"
 
