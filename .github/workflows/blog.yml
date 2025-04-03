@@ -28,6 +28,7 @@ jobs:
         git checkout main
         mkdir -p blogs
         cp -rf ~/blogs/* ./blogs/
+        git add blogs/*
         git commit -am "${COMMIT_INFO}"
 
     - name: Push
