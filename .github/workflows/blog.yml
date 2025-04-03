@@ -5,7 +5,7 @@ on:
     branches: [ "blog" ]
 
 jobs:
-  deploy:
+  deploy-blogs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -31,5 +31,5 @@ jobs:
      - name: Push
        uses: ad-m/github-push-action@master
        with:
-         branch: blog
+         branch: main
 
