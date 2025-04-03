@@ -14,7 +14,6 @@ jobs:
       with:
         repository: zxunge/zxunge.github.io
         fetch-depth: 0
-        fetch: '+refs/heads/*:refs/remotes/origin/*'
 
     - name: deploy
       run: |
@@ -22,6 +21,7 @@ jobs:
 
         git config --local user.email "3396563372@qq.com"
         git config --local user.name "zxunge"
+        git pull origin blog
         git checkout -b blog
 
         COMMIT_INFO=$(git log -n 1 | tail -n 1)
