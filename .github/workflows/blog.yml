@@ -20,7 +20,7 @@ jobs:
 
         git config --local user.email "3396563372@qq.com"
         git config --local user.name "zxunge"
-        ls
+        ls -a
         git checkout blog
 
         COMMIT_INFO=$(git log -n 1 | tail -n 1)
