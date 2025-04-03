@@ -1,8 +1,6 @@
 name: deploy-blogs
 
 on:
-  push:
-    branches: [ "blog", "main" ]
   workflow_dispatch:
 
 jobs:
