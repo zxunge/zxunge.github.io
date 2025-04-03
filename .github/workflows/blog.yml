@@ -3,6 +3,7 @@ name: deploy-blogs
 on:
   push:
     branches: [ "blog" ]
+  workflow_dispatch:
 
 jobs:
   deploy:
