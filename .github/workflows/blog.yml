@@ -13,6 +13,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: zxunge/zxunge.github.io
+        fetch-depth: 0
+        fetch: '+refs/heads/*:refs/remotes/origin/*'
 
     - name: deploy
       run: |
