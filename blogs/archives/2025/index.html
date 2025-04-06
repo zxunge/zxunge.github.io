@@ -346,7 +346,7 @@
     </article>
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom">
+    <article class="postShorten postShorten--thumbnailimg-right">
         <div class="postShorten-wrap">
             
             <div class="postShorten-header">
@@ -378,76 +378,17 @@
 
             </div>
             
-                <div class="postShorten-content">
-                    <p><strong>警告(WARNING)：本文已过时；该项目已更名为’QJsonConfigurator’</strong><br>QJSONConfig是我设计的一个JSON配置文件读写类，支持以一种简便的方式存取配置信息，同时采用JSON格式，小巧易读。它还支持嵌套配置信息存取，为复杂信息的管理提供了有效的手段。内部与Qt5或6兼容，适合在Qt应用程序中使用。<br>目录</p>
-<pre><code>获取和使用QJSONConfig
-
-QJSONConfig的基本使用
-
-    配置信息的写入
-
-    配置信息的读取
-
-    配置文件的保存与清除
-</code></pre>
-<h1 id="获取和使用QJSONConfig"><a href="#获取和使用QJSONConfig" class="headerlink" title="获取和使用QJSONConfig"></a>获取和使用QJSONConfig</h1><p>获取是非常容易办到的，只需</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;zxunge&#x2F;QJSONConfig.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后，你可以将QJSONConfig复制到项目目录中，在源代码中包含qjsonconfig.h即可（记住要添加include路径哦）</p>
-<h1 id="QJSONConfig的基本使用"><a href="#QJSONConfig的基本使用" class="headerlink" title="QJSONConfig的基本使用"></a>QJSONConfig的基本使用</h1><p>首先我们需要定义一个QJSONConfig对象：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">QJSONConfig <span class="token function">cfg</span><span class="token punctuation">(</span><span class="token string">"cfg.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>构造QJSONConfig时需要传递配置文件的名称。默认的名称是config.json。</p>
-<p>接下来，我们需要读写配置内容。但是读者可能会问了，如果是第一次运行应用程序，那么怎么初始化相关配置呢？QJSONConfig已经为我们想好了。它提供了一个empty()用于判断配置是否为空：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>cfg<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#123;</span>
-    <span class="token comment">// do stuff</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="配置信息的写入"><a href="#配置信息的写入" class="headerlink" title="配置信息的写入"></a>配置信息的写入</h2><p>写入配置信息时，有两种方式。官方推荐的，是采用setValue()：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cfg<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这里的value是一个QVariant，具体支持的类型，可以见Variant types，这里列出了一些元类型对应的转换结果，可以作为支持类型的参考。如果没有提供value参数会怎样？key会被初始化成空值。</p>
-<p>这里有个嵌套配置信息的使用。有时我们想把某些信息归类到某个东西底下，怎么办呢？使用斜杠：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cfg<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token string">"app/name"</span><span class="token punctuation">,</span> <span class="token string">"auhu"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-cfg<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token string">"app/style"</span><span class="token punctuation">,</span> <span class="token string">"fusion"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-cfg<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token string">"app/style/file"</span><span class="token punctuation">,</span> <span class="token string">"sss.qss"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>这些信息也会以嵌套形式储存在json文件中。</p>
-<p>另一种是使用[]运算符实现读写统一，但它有严重缺陷，感兴趣的读者可自行研究。</p>
-<h2 id="配置信息的读取"><a href="#配置信息的读取" class="headerlink" title="配置信息的读取"></a>配置信息的读取</h2><p>读取配置信息最佳做法便是使用下标运算符：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">QVariant value <span class="token operator">=</span> cfg<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> value <span class="token operator">=</span> cfg<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">double</span> value <span class="token operator">=</span> cfg<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toDouble</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-QString value <span class="token operator">=</span> cfg<span class="token punctuation">[</span><span class="token string">"key"</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment">// .........</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>要注意的是，取下标得到的结果是QVariant，必要时需要调用相关toXXX()实现类型转换。</p>
-<p>使用getValue()也可达到同样效果：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">QVariant value <span class="token operator">=</span> cfg<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> value <span class="token operator">=</span> cfg<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">double</span> value <span class="token operator">=</span> cfg<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toDouble</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-QString value <span class="token operator">=</span> cfg<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment">// .........</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>嵌套信息的读取，使用斜杠即可。</p>
-<p>getValue()第二个参数是默认值，表明当没有key时的返回值。</p>
-<h2 id="配置文件的保存与清除"><a href="#配置文件的保存与清除" class="headerlink" title="配置文件的保存与清除"></a>配置文件的保存与清除</h2><p>sync()函数用于同步配置信息（这不仅是代码→文件，也是文件→代码）：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cfg<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>clear()则清除所有内容：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cfg<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment">// All is gone...</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p><strong>限于时间，更多内容请见仓库里的demo！欢迎issue，和PR！</strong></p>
-
+                <div class="postShorten-excerpt">
+                    <p>本文介绍了一个小巧的Qt JSON配置文件管理类(现已过时)。</p>
                     
+                        <a
+                            href="/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/"
+                            class="postShorten-excerpt_link link"
+                            aria-label=": 如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！"
+                        >
+                            阅读全文
+                        </a>
                         
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                评论和共享
-                            </a>
-                        </p>
                     
                 </div>
             
@@ -456,7 +397,7 @@ QString value <span class="token operator">=</span> cfg<span class="token punctu
     </article>
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom">
+    <article class="postShorten postShorten--thumbnailimg-right">
         <div class="postShorten-wrap">
             
             <div class="postShorten-header">
@@ -488,31 +429,17 @@ QString value <span class="token operator">=</span> cfg<span class="token punctu
 
             </div>
             
-                <div class="postShorten-content">
-                    <p>时隔5年，Code::Blocks，这一开源的C&#x2F;C++、Fortran IDE，尤长于开发wxWidgets应用程序，终于发布了新版：25.03。就在前几十个小时里，Code::Blocks官方宣布了这一消息。</p>
-<p>话不多说，先上链接：<a target="_blank" rel="noopener" href="https://forums.codeblocks.org/index.php/topic,25992.msg177095/topicseen.html#msg177095">Release 25.03 has arrived</a></p>
-<blockquote>
-<p>Code::Blocks is a free C&#x2F;C++ and Fortran IDE built to meet the most demanding needs of its users. It is designed to be very extensible and fully configurable.</p>
-</blockquote>
-<blockquote>
-<p>Built around a plugin framework, Code::Blocks can be extended with plugins. Any kind of functionality can be added by installing&#x2F;coding a plugin. For instance, event compiling and debugging functionality is provided by plugins!</p>
-</blockquote>
-
+                <div class="postShorten-excerpt">
+                    <p>这是5年之后，也就是今年，Code::Blocks终于发布的一个新版本。</p>
                     
+                        <a
+                            href="/blogs/2025/04/Code-Blocks-25-03%E9%87%8D%E7%A3%85%E6%9D%A5%E8%A2%AD%EF%BC%9A%E8%89%AF%E4%B9%85%E7%9A%84%E7%A7%AF%E7%B4%AF%EF%BC%8C%E5%B4%AD%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD/"
+                            class="postShorten-excerpt_link link"
+                            aria-label=": Code::Blocks 25.03重磅来袭：良久的积累，崭新的功能"
+                        >
+                            阅读全文
+                        </a>
                         
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/blogs/2025/04/Code-Blocks-25-03%E9%87%8D%E7%A3%85%E6%9D%A5%E8%A2%AD%EF%BC%9A%E8%89%AF%E4%B9%85%E7%9A%84%E7%A7%AF%E7%B4%AF%EF%BC%8C%E5%B4%AD%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                评论和共享
-                            </a>
-                        </p>
                     
                 </div>
             
