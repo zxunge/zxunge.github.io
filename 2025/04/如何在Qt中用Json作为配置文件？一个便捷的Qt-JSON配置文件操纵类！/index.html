@@ -19,7 +19,7 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/blogs/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png"},"articleBody":"\n\n\n\n警告(WARNING)：本文已过时；该项目已更名为’QJsonConfigurator’QJSONConfig是我设计的一个JSON配置文件读写类，支持以一种简便的方式存取配置信息，同时采用JSON格式，小巧易读。它还支持嵌套配置信息存取，为复杂信息的管理提供了有效的手段。内部与Qt5或6兼容，适合在Qt应用程序中使用\n获取和使用QJSONConfig获取是非常容易办到的，只需\ngit clone https://github.com/zxunge/QJSONConfig.git\n\n然后，你可以将QJSONConfig复制到项目目录中，在源代码中包含qjsonconfig.h即可（记住要添加include路径哦）\nQJSONConfig的基本使用首先我们需要定义一个QJSONConfig对象：\nQJSONConfig cfg(&quot;cfg.json&quot;);\n\n构造QJSONConfig时需要传递配置文件的名称。默认的名称是config.json。\n接下来，我们需要读写配置内容。但是读者可能会问了，如果是第一次运行应用程序，那么怎么初始化相关配置呢？QJSONConfig已经为我们想好了。它提供了一个empty()用于判断配置是否为空：\nif (cfg.empty())\n&#123;\n    // do stuff\n&#125;\n\n配置信息的写入写入配置信息时，有两种方式。官方推荐的，是采用setValue()：\ncfg.setValue(&quot;key&quot;, value);\n\n这里的value是一个QVariant，具体支持的类型，可以见Variant types，这里列出了一些元类型对应的转换结果，可以作为支持类型的参考。如果没有提供value参数会怎样？key会被初始化成空值。\n这里有个嵌套配置信息的使用。有时我们想把某些信息归类到某个东西底下，怎么办呢？使用斜杠：\ncfg.setValue(&quot;app/name&quot;, &quot;auhu&quot;);\ncfg.setValue(&quot;app/style&quot;, &quot;fusion&quot;);\ncfg.setValue(&quot;app/style/file&quot;, &quot;sss.qss&quot;);\n\n这些信息也会以嵌套形式储存在json文件中。\n另一种是使用[]运算符实现读写统一，但它有严重缺陷，感兴趣的读者可自行研究。\n配置信息的读取读取配置信息最佳做法便是使用下标运算符：\nQVariant value = cfg[&quot;key&quot;];\nint value = cfg[&quot;key&quot;].toInt();\ndouble value = cfg[&quot;key&quot;].toDouble();\nQString value = cfg[&quot;key&quot;].toString();\n// .........\n\n要注意的是，取下标得到的结果是QVariant，必要时需要调用相关toXXX()实现类型转换。\n使用getValue()也可达到同样效果：\nQVariant value = cfg.getValue(&quot;key&quot;);\nint value = cfg.getValue(&quot;key&quot;).toInt();\ndouble value = cfg.getValue(&quot;key&quot;).toDouble();\nQString value = cfg.getValue(&quot;key&quot;).toString();\n// .........\n\n嵌套信息的读取，使用斜杠即可。\ngetValue()第二个参数是默认值，表明当没有key时的返回值。\n配置文件的保存与清除sync()函数用于同步配置信息（这不仅是代码→文件，也是文件→代码）：\ncfg.sync();\n\nclear()则清除所有内容：\ncfg.clear();\n// All is gone...\n\n限于时间，更多内容请见仓库里的demo！欢迎issue，和PR！","dateCreated":"2025-04-03T22:29:33+08:00","dateModified":"2025-04-07T22:43:20+08:00","datePublished":"2025-04-03T22:29:33+08:00","description":"本文介绍了一个小巧的Qt JSON配置文件管理类(现已过时)。","headline":"如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://zxunge.github.io/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/"},"publisher":{"@type":"Organization","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png","logo":{"@type":"ImageObject","url":"avatar.png"}},"url":"https://zxunge.github.io/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/","keywords":"Qt, json"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png"},"articleBody":"\n\n\n\n警告(WARNING)：本文已过时；该项目已更名为ZXmlConfigUtil(XML版)QJSONConfig是我设计的一个JSON配置文件读写类，支持以一种简便的方式存取配置信息，同时采用JSON格式，小巧易读。它还支持嵌套配置信息存取，为复杂信息的管理提供了有效的手段。内部与Qt5或6兼容，适合在Qt应用程序中使用\n获取和使用QJSONConfig获取是非常容易办到的，只需\ngit clone https://github.com/zxunge/QJSONConfig.git\n\n然后，你可以将QJSONConfig复制到项目目录中，在源代码中包含qjsonconfig.h即可（记住要添加include路径哦）\nQJSONConfig的基本使用首先我们需要定义一个QJSONConfig对象：\nQJSONConfig cfg(&quot;cfg.json&quot;);\n\n构造QJSONConfig时需要传递配置文件的名称。默认的名称是config.json。\n接下来，我们需要读写配置内容。但是读者可能会问了，如果是第一次运行应用程序，那么怎么初始化相关配置呢？QJSONConfig已经为我们想好了。它提供了一个empty()用于判断配置是否为空：\nif (cfg.empty())\n&#123;\n    // do stuff\n&#125;\n\n配置信息的写入写入配置信息时，有两种方式。官方推荐的，是采用setValue()：\ncfg.setValue(&quot;key&quot;, value);\n\n这里的value是一个QVariant，具体支持的类型，可以见Variant types，这里列出了一些元类型对应的转换结果，可以作为支持类型的参考。如果没有提供value参数会怎样？key会被初始化成空值。\n这里有个嵌套配置信息的使用。有时我们想把某些信息归类到某个东西底下，怎么办呢？使用斜杠：\ncfg.setValue(&quot;app/name&quot;, &quot;auhu&quot;);\ncfg.setValue(&quot;app/style&quot;, &quot;fusion&quot;);\ncfg.setValue(&quot;app/style/file&quot;, &quot;sss.qss&quot;);\n\n这些信息也会以嵌套形式储存在json文件中。\n另一种是使用[]运算符实现读写统一，但它有严重缺陷，感兴趣的读者可自行研究。\n配置信息的读取读取配置信息最佳做法便是使用下标运算符：\nQVariant value = cfg[&quot;key&quot;];\nint value = cfg[&quot;key&quot;].toInt();\ndouble value = cfg[&quot;key&quot;].toDouble();\nQString value = cfg[&quot;key&quot;].toString();\n// .........\n\n要注意的是，取下标得到的结果是QVariant，必要时需要调用相关toXXX()实现类型转换。\n使用getValue()也可达到同样效果：\nQVariant value = cfg.getValue(&quot;key&quot;);\nint value = cfg.getValue(&quot;key&quot;).toInt();\ndouble value = cfg.getValue(&quot;key&quot;).toDouble();\nQString value = cfg.getValue(&quot;key&quot;).toString();\n// .........\n\n嵌套信息的读取，使用斜杠即可。\ngetValue()第二个参数是默认值，表明当没有key时的返回值。\n配置文件的保存与清除sync()函数用于同步配置信息（这不仅是代码→文件，也是文件→代码）：\ncfg.sync();\n\nclear()则清除所有内容：\ncfg.clear();\n// All is gone...\n\n限于时间，更多内容请见仓库里的demo！欢迎issue，和PR！","dateCreated":"2025-04-03T22:29:33+08:00","dateModified":"2025-04-19T00:17:33+08:00","datePublished":"2025-04-03T22:29:33+08:00","description":"本文介绍了一个小巧的Qt JSON配置文件管理类(现已过时)。","headline":"如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://zxunge.github.io/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/"},"publisher":{"@type":"Organization","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png","logo":{"@type":"ImageObject","url":"avatar.png"}},"url":"https://zxunge.github.io/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/","keywords":"Qt, json"}</script>
     <meta name="description" content="本文介绍了一个小巧的Qt JSON配置文件管理类(现已过时)。">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="本文介绍了一个小巧的Qt JSON配置文件管理类(现已过时)。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-04-03T14:29:33.000Z">
-<meta property="article:modified_time" content="2025-04-07T14:43:20.108Z">
+<meta property="article:modified_time" content="2025-04-18T16:17:33.757Z">
 <meta property="article:author" content="zxunge">
 <meta property="article:tag" content="Qt">
 <meta property="article:tag" content="json">
@@ -316,7 +316,7 @@
 
 <h1 id="table-of-contents">目录</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%92%8C%E4%BD%BF%E7%94%A8QJSONConfig"><span class="toc-text">获取和使用QJSONConfig</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#QJSONConfig%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-text">QJSONConfig的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%E7%9A%84%E5%86%99%E5%85%A5"><span class="toc-text">配置信息的写入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%E7%9A%84%E8%AF%BB%E5%8F%96"><span class="toc-text">配置信息的读取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E4%BF%9D%E5%AD%98%E4%B8%8E%E6%B8%85%E9%99%A4"><span class="toc-text">配置文件的保存与清除</span></a></li></ol></li></ol>
 
-<p><strong>警告(WARNING)：本文已过时；该项目已更名为’QJsonConfigurator’</strong><br>QJSONConfig是我设计的一个JSON配置文件读写类，支持以一种简便的方式存取配置信息，同时采用JSON格式，小巧易读。它还支持嵌套配置信息存取，为复杂<br>信息的管理提供了有效的手段。内部与Qt5或6兼容，适合在Qt应用程序中使用</p>
+<p><strong>警告(WARNING)：本文已过时；该项目已更名为<a target="_blank" rel="noopener" href="https://github.com/zxunge/ZXmlConfigUtil">ZXmlConfigUtil(XML版)</a></strong><br>QJSONConfig是我设计的一个JSON配置文件读写类，支持以一种简便的方式存取配置信息，同时采用JSON格式，小巧易读。它还支持嵌套配置信息存取，为复杂<br>信息的管理提供了有效的手段。内部与Qt5或6兼容，适合在Qt应用程序中使用</p>
 <h1 id="获取和使用QJSONConfig"><a href="#获取和使用QJSONConfig" class="headerlink" title="获取和使用QJSONConfig"></a>获取和使用QJSONConfig</h1><p>获取是非常容易办到的，只需</p>
 <pre><code class="language-bash">git clone https://github.com/zxunge/QJSONConfig.git
 </code></pre>
@@ -889,6 +889,29 @@ QString value = cfg.getValue(&quot;key&quot;).toString();
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://zxunge.github.io/blogs/2025/04/Hermes%E5%BC%95%E6%93%8E-Windows%E4%B8%8BGCC%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"
+                            aria-label=": Hermes引擎 - Windows下GCC源码编译踩坑记录"
+                        >
+                            <h3 class="media-heading">Hermes引擎 - Windows下GCC源码编译踩坑记录</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2025年4月15日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>本文介绍了在Windows下使用Msys2环境构建Hermes引擎的方法，解决了一系列棘手问题。</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -896,7 +919,7 @@ QString value = cfg.getValue(&quot;key&quot;).toString();
                 data-message-zero="没有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 3 篇文章
+                找到 4 篇文章
             </p>
         </div>
     </div>
