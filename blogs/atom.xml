@@ -6,7 +6,7 @@
   <link href="https://zxunge.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://zxunge.github.io/blogs/"/>
-  <updated>2025-04-20T08:36:13.338Z</updated>
+  <updated>2025-04-20T08:42:34.526Z</updated>
   <id>https://zxunge.github.io/blogs/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://zxunge.github.io/blogs/2025/04/%E6%94%BE%E5%BC%83GitHub-%E8%AF%91%E8%87%AASoftware-Freedom-Conservancy/"/>
     <id>https://zxunge.github.io/blogs/2025/04/%E6%94%BE%E5%BC%83GitHub-%E8%AF%91%E8%87%AASoftware-Freedom-Conservancy/</id>
     <published>2025-04-20T07:49:37.000Z</published>
-    <updated>2025-04-20T08:36:13.338Z</updated>
+    <updated>2025-04-20T08:42:34.526Z</updated>
     
-    <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p><strong>本文观点及内容来自SFC；如翻译有出入，一概以原文为准。</strong> <br /></p><p>在2022年六月29日星期三，我们<a href="https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/">开始号召所有FOSS开发人员</a><strong>放弃GitHub</strong>。<br /><br><img src="/blogs/blogs/img/GiveUpGitHub.04a2974ac680.svg" alt="模拟GitHub的logo，他们从用户权利中压榨所希冀的金钱"><br>我们意识到这不是一件轻松的任务；GitHub无处不在。通过他们有效的营销手段，自由和开源软件(FOSS)开发人员们已确信GitHub是FOSS开发的最佳（甚至是唯一）之地。然而，作为一个专有的、具有商业秘密的工具，GitHub本身其实正和FOSS针锋相对。相比之下，Git的设计目标便是<a href="http://www.h-online.com/open/features/The-saga-of-Git-Lightning-does-strike-twice-1051559.html">取代一个专有的工具 (BitKeeper）</a>并使FOSS开发人人共享——使用FOSS工具并抛弃一种集中化的站点。GitHub封装了Git——搞出一些额外的东西把一个共享的、平等的FOSS系统变成了集中的、专有的站点。而且这些东西还控制在一家专门的、唯利是的公司手中。在GitHub上工作时，已有的FOSS社区又会把新手携带到这个专有的平台之上——更扩张了GitHub的地盘，也限制了下一代FOSS开发人员的想象力。<br /></p>]]></content>
+    <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p><strong>本文观点及内容来自SFC；如翻译有出入，一概以原文为准。</strong> <br /></p><p>在2022年六月29日星期三，我们<a href="https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/">开始号召所有FOSS开发人员</a><strong>放弃GitHub</strong>。<br /><br><img src="/blogs/img/GiveUpGitHub.04a2974ac680.svg" alt="模拟GitHub的logo，他们从用户权利中压榨所希冀的金钱"><br>我们意识到这不是一件轻松的任务；GitHub无处不在。通过他们有效的营销手段，自由和开源软件(FOSS)开发人员们已确信GitHub是FOSS开发的最佳（甚至是唯一）之地。然而，作为一个专有的、具有商业秘密的工具，GitHub本身其实正和FOSS针锋相对。相比之下，Git的设计目标便是<a href="http://www.h-online.com/open/features/The-saga-of-Git-Lightning-does-strike-twice-1051559.html">取代一个专有的工具 (BitKeeper）</a>并使FOSS开发人人共享——使用FOSS工具并抛弃一种集中化的站点。GitHub封装了Git——搞出一些额外的东西把一个共享的、平等的FOSS系统变成了集中的、专有的站点。而且这些东西还控制在一家专门的、唯利是图的公司手中。在GitHub上工作时，已有的FOSS社区又会把新手携带到这个专有的平台之上——更扩张了GitHub的地盘，也限制了下一代FOSS开发人员的想象力。<br /></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;本文是翻译自&lt;a href=&quot;https://sfconservancy.org/GiveUpGitHub/&quot;&gt;Software Freedom Conservancy&lt;/a&gt;的一篇文章，倡导了放弃GitHub的主张。&lt;/p&gt;</summary>
