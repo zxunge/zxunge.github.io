@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="博客 | 万顷茫然的主页">
-    <title>免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍 - 博客 | 万顷茫然的主页</title>
+    <title>移动设备上运行Linux：实用的虚拟机与可成功的发行版 - 博客 | 万顷茫然的主页</title>
     <meta name="author" content="zxunge">
     
         <meta name="keywords" content="万顷茫然,blog,zxunge,Grit Clef,">
@@ -19,19 +19,21 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/blogs/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png"},"articleBody":"\n\n","dateCreated":"2025-04-06T14:51:29+00:00","dateModified":"2025-04-28T15:11:33+00:00","datePublished":"2025-04-06T14:51:29+00:00","description":"本文介绍了我开发的一个精巧的免费图片分割软件，它具有丰富的功能，非常实用。","headline":"免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"},"publisher":{"@type":"Organization","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png","logo":{"@type":"ImageObject","url":"avatar.png"}},"url":"https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/","keywords":"FreePictureSplitter, 图片分割"}</script>
-    <meta name="description" content="本文介绍了我开发的一个精巧的免费图片分割软件，它具有丰富的功能，非常实用。">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png"},"articleBody":"\n\n\n\n像许多人一样，我也认为移动设备生产力着实不高。既很难拥有高性能的硬件，又更难拥有强大的生产性的软件。所以，在手机等设备上运行诸如微机版本的Linux等操作系统，不失为一种过软件开发瘾的好方法。缺点在于，由于移动设备自身的特殊性，这样的操作具有十分大的开销；不企图它的真正实用性，作为一次对手机『魔改』的探索，这还是十分有吸引力的。\n安装前的准备话不多说，先看看我机子的配置：\n\n\n\n项目\n内容\n\n\n\n型号名称\nHUAWEI MatePad 11.5”S 灵动款\n\n\nHarmonyOS 版本\n4.2.0\n\n\n运行内存\n12 GB\n\n\n存储总容量\n256 GB\n\n\n屏幕\n2800 x 1840\n\n\n处理器\n据说是麒麟9000WM处理器\n\n\n我们先要获取一下文件：\n\nLimbo x86 PC Emulator\nantiX Linux Live CD\n\n模拟器用的是Limbo，这个大家应该有所了解——几乎是Android设备上唯一的x86架构模拟器。至于Linux发行版的选择，我使用的是antiX Linux，这是我经过很长时间、多个发行版筛选后发现的最终选项。antiX Linux完整、漂亮、简洁，能够运行绝大多数应用程序，同时又不至虚拟后的过低性能。就像他们自己说的那样：\n\nantiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！\n","dateCreated":"2025-04-28T06:35:22+00:00","dateModified":"2025-04-28T15:11:33+00:00","datePublished":"2025-04-28T06:35:22+00:00","description":"本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。","headline":"移动设备上运行Linux：实用的虚拟机与可成功的发行版","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"},"publisher":{"@type":"Organization","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png","logo":{"@type":"ImageObject","url":"avatar.png"}},"url":"https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/","keywords":"Linux, antiX, 移动设备, 虚拟机"}</script>
+    <meta name="description" content="本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍">
-<meta property="og:url" content="https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/index.html">
+<meta property="og:title" content="移动设备上运行Linux：实用的虚拟机与可成功的发行版">
+<meta property="og:url" content="https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/index.html">
 <meta property="og:site_name" content="博客 | 万顷茫然的主页">
-<meta property="og:description" content="本文介绍了我开发的一个精巧的免费图片分割软件，它具有丰富的功能，非常实用。">
+<meta property="og:description" content="本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-04-06T14:51:29.000Z">
-<meta property="article:modified_time" content="2025-04-28T15:11:33.601Z">
+<meta property="article:published_time" content="2025-04-28T06:35:22.000Z">
+<meta property="article:modified_time" content="2025-04-28T15:11:33.597Z">
 <meta property="article:author" content="zxunge">
-<meta property="article:tag" content="FreePictureSplitter">
-<meta property="article:tag" content="图片分割">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="antiX">
+<meta property="article:tag" content="移动设备">
+<meta property="article:tag" content="虚拟机">
 <meta name="twitter:card" content="summary">
     
     
@@ -287,20 +289,20 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍
+            移动设备上运行Linux：实用的虚拟机与可成功的发行版
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2025-04-06T14:51:29+00:00">
+    <time datetime="2025-04-28T06:35:22+00:00">
 	
-		    2025 年 4 月 6 日
+		    2025 年 4 月 28 日
     	
     </time>
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/blogs/categories/%E8%BD%AF%E4%BB%B6/">软件</a>
+    <a class="category-link" href="/blogs/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</a>, <a class="category-link" href="/blogs/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/">移动设备</a>
 
 
     
@@ -314,7 +316,51 @@
         <div class="main-content-wrap">
             <!-- excerpt -->
 
-<h1 id="table-of-contents">目录</h1>
+<h1 id="table-of-contents">目录</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87"><span class="toc-text">安装前的准备</span></a></li></ol>
+
+<p>像许多人一样，我也认为移动设备生产力着实不高。既很难拥有高性能的硬件，又更难拥有强大的生产性的软件。所以，在手机等设备上运行诸如微机版本的Linux等操作系统，不失为一种过软件开发瘾的好方法。缺点在于，由于移动设备自身的特殊性，这样的操作具有十分大的开销；不企图它的真正实用性，作为一次对手机『魔改』的探索，这还是十分有吸引力的。</p>
+<h1 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h1><p>话不多说，先看看我机子的配置：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>型号名称</td>
+<td>HUAWEI MatePad 11.5”S 灵动款</td>
+</tr>
+<tr>
+<td>HarmonyOS 版本</td>
+<td>4.2.0</td>
+</tr>
+<tr>
+<td>运行内存</td>
+<td>12 GB</td>
+</tr>
+<tr>
+<td>存储总容量</td>
+<td>256 GB</td>
+</tr>
+<tr>
+<td>屏幕</td>
+<td>2800 x 1840</td>
+</tr>
+<tr>
+<td>处理器</td>
+<td>据说是麒麟9000WM处理器</td>
+</tr>
+</tbody></table>
+<p>我们先要获取一下文件：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/limboemu/limbo/releases/download/v6.0.1-LimboEmulator/limbo-android-x86-6.0.1-qemu-5.1.0.apk">Limbo x86 PC Emulator</a></li>
+<li><a target="_blank" rel="noopener" href="https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso/download">antiX Linux Live CD</a></li>
+</ul>
+<p>模拟器用的是Limbo，这个大家应该有所了解——几乎是Android设备上唯一的x86架构模拟器。<br>至于Linux发行版的选择，我使用的是antiX Linux，这是我经过很长时间、多个发行版筛选后发现的最终选项。antiX Linux完整、漂亮、简洁，能够运行绝大多数应用程序，同时又不至虚拟后的过低性能。<br>就像他们自己说的那样：</p>
+<blockquote>
+<p>antiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.<br>（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）<br>言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！</p>
+</blockquote>
             
 
 
@@ -325,7 +371,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">标签</span><br/>
                 
-    <a class="tag tag--primary tag--small t-none-link" href="/blogs/tags/FreePictureSplitter/" rel="tag">FreePictureSplitter</a> <a class="tag tag--primary tag--small t-none-link" href="/blogs/tags/%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2/" rel="tag">图片分割</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/blogs/tags/Linux/" rel="tag">Linux</a> <a class="tag tag--primary tag--small t-none-link" href="/blogs/tags/antiX/" rel="tag">antiX</a> <a class="tag tag--primary tag--small t-none-link" href="/blogs/tags/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/" rel="tag">移动设备</a> <a class="tag tag--primary tag--small t-none-link" href="/blogs/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a>
 
             </div>
         
@@ -335,14 +381,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/blogs/2025/04/Hermes%E5%BC%95%E6%93%8E-Windows%E4%B8%8BGCC%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"
-                    data-tooltip="Hermes引擎 - Windows下GCC源码编译踩坑记录"
-                    aria-label="上一篇: Hermes引擎 - Windows下GCC源码编译踩坑记录"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                     </a>
@@ -352,9 +395,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/"
-                    data-tooltip="如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！"
-                    aria-label="下一篇: 如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！"
+                    href="/blogs/2025/04/%E6%94%BE%E5%BC%83GitHub-%E8%AF%91%E8%87%AASoftware-Freedom-Conservancy/"
+                    data-tooltip="放弃GitHub! -- 译自Software Freedom Conservancy"
+                    aria-label="下一篇: 放弃GitHub! -- 译自Software Freedom Conservancy"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
@@ -379,7 +422,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -392,7 +435,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -405,7 +448,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Weibo"
                     aria-label="分享到 Weibo"
                 >
@@ -418,7 +461,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/&amp;title=免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍"
+                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/&amp;title=移动设备上运行Linux：实用的虚拟机与可成功的发行版"
                     title="分享到 QQ"
                     aria-label="分享到 QQ"
                 >
@@ -431,7 +474,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Qzone"
                     aria-label="分享到 Qzone"
                 >
@@ -444,7 +487,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://vk.com/share.php?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="https://vk.com/share.php?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 VK"
                     aria-label="分享到 VK"
                 >
@@ -489,14 +532,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/blogs/2025/04/Hermes%E5%BC%95%E6%93%8E-Windows%E4%B8%8BGCC%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"
-                    data-tooltip="Hermes引擎 - Windows下GCC源码编译踩坑记录"
-                    aria-label="上一篇: Hermes引擎 - Windows下GCC源码编译踩坑记录"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                     </a>
@@ -506,9 +546,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/"
-                    data-tooltip="如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！"
-                    aria-label="下一篇: 如何在Qt中用Json作为配置文件？一个便捷的Qt JSON配置文件操纵类！"
+                    href="/blogs/2025/04/%E6%94%BE%E5%BC%83GitHub-%E8%AF%91%E8%87%AASoftware-Freedom-Conservancy/"
+                    data-tooltip="放弃GitHub! -- 译自Software Freedom Conservancy"
+                    aria-label="下一篇: 放弃GitHub! -- 译自Software Freedom Conservancy"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
@@ -533,7 +573,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -546,7 +586,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -559,7 +599,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Weibo"
                     aria-label="分享到 Weibo"
                 >
@@ -572,7 +612,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/&amp;title=免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍"
+                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/&amp;title=移动设备上运行Linux：实用的虚拟机与可成功的发行版"
                     title="分享到 QQ"
                     aria-label="分享到 QQ"
                 >
@@ -585,7 +625,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 Qzone"
                     aria-label="分享到 Qzone"
                 >
@@ -598,7 +638,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://vk.com/share.php?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                    target="new" href="https://vk.com/share.php?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                     title="分享到 VK"
                     aria-label="分享到 VK"
                 >
@@ -632,7 +672,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                         aria-label="分享到 Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>分享到 Facebook</span>
@@ -645,7 +685,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                        href="https://twitter.com/intent/tweet?text=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                         aria-label="分享到 Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
@@ -658,7 +698,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://service.weibo.com/share/share.php?&amp;title=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                        href="http://service.weibo.com/share/share.php?&amp;title=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                         aria-label="分享到 Weibo"
                     >
                         <i class="fab fa-weibo" aria-hidden="true"></i><span>分享到 Weibo</span>
@@ -671,7 +711,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://connect.qq.com/widget/shareqq/index.html?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/&amp;title=免费、便捷、强大的图片分割软件 - FreePictureSplitter介绍"
+                        href="http://connect.qq.com/widget/shareqq/index.html?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/&amp;title=移动设备上运行Linux：实用的虚拟机与可成功的发行版"
                         aria-label="分享到 QQ"
                     >
                         <i class="fab fa-qq" aria-hidden="true"></i><span>分享到 QQ</span>
@@ -684,7 +724,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                        href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                         aria-label="分享到 Qzone"
                     >
                         <i class="fa fa-star" aria-hidden="true"></i><span>分享到 Qzone</span>
@@ -697,7 +737,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://vk.com/share.php?url=https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"
+                        href="https://vk.com/share.php?url=https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"
                         aria-label="分享到 VK"
                     >
                         <i class="fab fa-vk" aria-hidden="true"></i><span>分享到 VK</span>
