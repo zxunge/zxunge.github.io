@@ -19,7 +19,7 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/blogs/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png"},"articleBody":"\n\n\n\n像许多人一样，我也认为移动设备生产力着实不高。既很难拥有高性能的硬件，又更难拥有强大的生产性的软件。所以，在手机等设备上运行诸如微机版本的Linux操作系统，不失为一种过软件开发瘾的好方法。缺点在于，由于移动设备自身的特殊性，这样的操作具有十分大的开销；不企图它的真正实用性，作为一次对手机『魔改』的探索，这还是十分有吸引力的。\n安装前的准备话不多说，先看看我机子的配置：\n\n\n\n项目\n内容\n\n\n\n型号名称\nHUAWEI MatePad 11.5”S 灵动款\n\n\nHarmonyOS 版本\n4.2.0\n\n\n运行内存\n12 GB\n\n\n存储总容量\n256 GB\n\n\n屏幕\n2800 x 1840\n\n\n处理器\n据说是麒麟9000WM处理器\n\n\n我们先要获取一下文件：\n\nLimbo x86 PC Emulator\nantiX Linux Live CD\n\n模拟器用的是Limbo，这个大家应该有所了解——几乎是Android设备上唯一的x86架构模拟器。至于Linux发行版的选择，我使用的是antiX Linux，它是我经过很长时间、多个发行版筛选后发现的最终选项。antiX Linux完整、漂亮、简洁，能够运行绝大多数应用程序，同时又不至虚拟后的过低性能。就像他们自己说的那样：\n\nantiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.\n\n（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！\n进入安装程序模拟器的配置打开Limbo，弹出的几个对话框自己看看内容，作出合理选择；接下来，从右上角写着“None”的下拉列表中选择“New”，创建一台新的虚拟机。完成配置后的Limbo","dateCreated":"2025-04-28T06:35:22+00:00","dateModified":"2025-04-28T15:34:03+00:00","datePublished":"2025-04-28T06:35:22+00:00","description":"本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。","headline":"移动设备上运行Linux：实用的虚拟机与可成功的发行版","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"},"publisher":{"@type":"Organization","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png","logo":{"@type":"ImageObject","url":"avatar.png"}},"url":"https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/","keywords":"Linux, antiX, 移动设备, 虚拟机"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png"},"articleBody":"\n\n\n\n像许多人一样，我也认为移动设备生产力着实不高。既很难拥有高性能的硬件，又更难拥有强大的生产性的软件。所以，在手机等设备上运行诸如微机版本的Linux操作系统，不失为一种过软件开发瘾的好方法。缺点在于，由于移动设备自身的特殊性，这样的操作具有十分大的开销；不企图它的真正实用性，作为一次对手机『魔改』的探索，这还是十分有吸引力的。\n安装前的准备话不多说，先看看我机子的配置：\n\n\n\n项目\n内容\n\n\n\n型号名称\nHUAWEI MatePad 11.5”S 灵动款\n\n\nHarmonyOS 版本\n4.2.0\n\n\n运行内存\n12 GB\n\n\n存储总容量\n256 GB\n\n\n屏幕\n2800 x 1840\n\n\n处理器\n据说是麒麟9000WM处理器\n\n\n我们先要获取一下文件：\n\nLimbo x86 PC Emulator\nantiX Linux Live CD\n\n模拟器用的是Limbo，这个大家应该有所了解——几乎是Android设备上唯一的x86架构模拟器。至于Linux发行版的选择，我使用的是antiX Linux，它是我经过很长时间、多个发行版筛选后发现的最终选项。antiX Linux完整、漂亮、简洁，能够运行绝大多数应用程序，同时又不至虚拟后的过低性能。就像他们自己说的那样：\n\nantiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.\n\n（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！\n进入安装程序模拟器的配置打开Limbo，弹出的几个对话框自己看看内容，作出合理选择；接下来，从右上角写着“None”的下拉列表中选择“New”，创建一台新的虚拟机。![完成后的截图](limbo-finished.jpg 完成配置后的Limbo)","dateCreated":"2025-04-28T06:35:22+00:00","dateModified":"2025-04-29T02:18:10+00:00","datePublished":"2025-04-28T06:35:22+00:00","description":"本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。","headline":"移动设备上运行Linux：实用的虚拟机与可成功的发行版","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"},"publisher":{"@type":"Organization","name":"zxunge","sameAs":["https://github.com/zxunge","https://stackoverflow.com/users/22123158/%e4%b8%87%e9%a1%b7%e8%8c%ab%e7%84%b6","mailto:3396563372@qq.com"],"image":"avatar.png","logo":{"@type":"ImageObject","url":"avatar.png"}},"url":"https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/","keywords":"Linux, antiX, 移动设备, 虚拟机"}</script>
     <meta name="description" content="本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="移动设备上运行Linux：实用的虚拟机与可成功的发行版">
@@ -27,16 +27,14 @@
 <meta property="og:site_name" content="博客 | 万顷茫然的主页">
 <meta property="og:description" content="本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zxunge.github.io/blogs/img/limbo-finished.jpg">
 <meta property="article:published_time" content="2025-04-28T06:35:22.000Z">
-<meta property="article:modified_time" content="2025-04-28T15:34:03.717Z">
+<meta property="article:modified_time" content="2025-04-29T02:18:10.549Z">
 <meta property="article:author" content="zxunge">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="antiX">
 <meta property="article:tag" content="移动设备">
 <meta property="article:tag" content="虚拟机">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zxunge.github.io/blogs/img/limbo-finished.jpg">
     
     
         
@@ -304,7 +302,7 @@
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/blogs/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</a>, <a class="category-link" href="/blogs/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/">移动设备</a>
+    <a class="category-link" href="/blogs/categories/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/">移动设备</a>
 
 
     
@@ -364,7 +362,7 @@
 <p>antiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.</p>
 </blockquote>
 <p>（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）<br>言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！</p>
-<h1 id="进入安装程序"><a href="#进入安装程序" class="headerlink" title="进入安装程序"></a>进入安装程序</h1><h2 id="模拟器的配置"><a href="#模拟器的配置" class="headerlink" title="模拟器的配置"></a>模拟器的配置</h2><p>打开Limbo，弹出的几个对话框自己看看内容，作出合理选择；接下来，从右上角写着“None”的下拉列表中选择“New”，创建一台新的虚拟机。<br><img src="/blogs/img/limbo-finished.jpg" alt="完成后的截图">完成配置后的Limbo</img></p>
+<h1 id="进入安装程序"><a href="#进入安装程序" class="headerlink" title="进入安装程序"></a>进入安装程序</h1><h2 id="模拟器的配置"><a href="#模拟器的配置" class="headerlink" title="模拟器的配置"></a>模拟器的配置</h2><p>打开Limbo，弹出的几个对话框自己看看内容，作出合理选择；接下来，从右上角写着“None”的下拉列表中选择“New”，创建一台新的虚拟机。<br>![完成后的截图](limbo-finished.jpg 完成配置后的Limbo)</p>
             
 
 
