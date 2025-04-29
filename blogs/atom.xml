@@ -6,7 +6,7 @@
   <link href="https://zxunge.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://zxunge.github.io/blogs/"/>
-  <updated>2025-04-28T15:34:03.717Z</updated>
+  <updated>2025-04-29T02:18:10.549Z</updated>
   <id>https://zxunge.github.io/blogs/</id>
   
   <author>
@@ -21,18 +21,16 @@
     <link href="https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/"/>
     <id>https://zxunge.github.io/blogs/2025/04/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8CLinux%EF%BC%9A%E5%AE%9E%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8E%E5%8F%AF%E6%88%90%E5%8A%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88/</id>
     <published>2025-04-28T06:35:22.000Z</published>
-    <updated>2025-04-28T15:34:03.717Z</updated>
+    <updated>2025-04-29T02:18:10.549Z</updated>
     
-    <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p>像许多人一样，我也认为移动设备生产力着实不高。既很难拥有高性能的硬件，又更难拥有强大的生产性的软件。所以，在手机等设备上运行诸如微机版本的Linux操作系统，不失为一种过软件开发瘾的好方法。缺点在于，由于移动设备自身的特殊性，这样的操作具有十分大的开销；不企图它的真正实用性，作为一次对手机『魔改』的探索，这还是十分有吸引力的。</p><h1 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h1><p>话不多说，先看看我机子的配置：</p><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td>型号名称</td><td>HUAWEI MatePad 11.5”S 灵动款</td></tr><tr><td>HarmonyOS 版本</td><td>4.2.0</td></tr><tr><td>运行内存</td><td>12 GB</td></tr><tr><td>存储总容量</td><td>256 GB</td></tr><tr><td>屏幕</td><td>2800 x 1840</td></tr><tr><td>处理器</td><td>据说是麒麟9000WM处理器</td></tr></tbody></table><p>我们先要获取一下文件：</p><ul><li><a href="https://github.com/limboemu/limbo/releases/download/v6.0.1-LimboEmulator/limbo-android-x86-6.0.1-qemu-5.1.0.apk">Limbo x86 PC Emulator</a></li><li><a href="https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso/download">antiX Linux Live CD</a></li></ul><p>模拟器用的是Limbo，这个大家应该有所了解——几乎是Android设备上唯一的x86架构模拟器。<br>至于Linux发行版的选择，我使用的是antiX Linux，它是我经过很长时间、多个发行版筛选后发现的最终选项。antiX Linux完整、漂亮、简洁，能够运行绝大多数应用程序，同时又不至虚拟后的过低性能。<br>就像他们自己说的那样：</p><blockquote><p>antiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.</p></blockquote><p>（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）<br>言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！</p><h1 id="进入安装程序"><a href="#进入安装程序" class="headerlink" title="进入安装程序"></a>进入安装程序</h1><h2 id="模拟器的配置"><a href="#模拟器的配置" class="headerlink" title="模拟器的配置"></a>模拟器的配置</h2><p>打开Limbo，弹出的几个对话框自己看看内容，作出合理选择；接下来，从右上角写着“None”的下拉列表中选择“New”，创建一台新的虚拟机。<br><img src="/blogs/img/limbo-finished.jpg" alt="完成后的截图">完成配置后的Limbo</img></p>]]></content>
+    <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p>像许多人一样，我也认为移动设备生产力着实不高。既很难拥有高性能的硬件，又更难拥有强大的生产性的软件。所以，在手机等设备上运行诸如微机版本的Linux操作系统，不失为一种过软件开发瘾的好方法。缺点在于，由于移动设备自身的特殊性，这样的操作具有十分大的开销；不企图它的真正实用性，作为一次对手机『魔改』的探索，这还是十分有吸引力的。</p><h1 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h1><p>话不多说，先看看我机子的配置：</p><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td>型号名称</td><td>HUAWEI MatePad 11.5”S 灵动款</td></tr><tr><td>HarmonyOS 版本</td><td>4.2.0</td></tr><tr><td>运行内存</td><td>12 GB</td></tr><tr><td>存储总容量</td><td>256 GB</td></tr><tr><td>屏幕</td><td>2800 x 1840</td></tr><tr><td>处理器</td><td>据说是麒麟9000WM处理器</td></tr></tbody></table><p>我们先要获取一下文件：</p><ul><li><a href="https://github.com/limboemu/limbo/releases/download/v6.0.1-LimboEmulator/limbo-android-x86-6.0.1-qemu-5.1.0.apk">Limbo x86 PC Emulator</a></li><li><a href="https://sourceforge.net/projects/antix-linux/files/Final/antiX-23.2/antiX-23.2_x64-full.iso/download">antiX Linux Live CD</a></li></ul><p>模拟器用的是Limbo，这个大家应该有所了解——几乎是Android设备上唯一的x86架构模拟器。<br>至于Linux发行版的选择，我使用的是antiX Linux，它是我经过很长时间、多个发行版筛选后发现的最终选项。antiX Linux完整、漂亮、简洁，能够运行绝大多数应用程序，同时又不至虚拟后的过低性能。<br>就像他们自己说的那样：</p><blockquote><p>antiX is a fast, lightweight and easy to install systemd-free linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems. antiX offers users the “antiX Magic” in an environment suitable for old and new computers. So don’t throw away that old computer yet! The goal of antiX is to provide a light, but fully functional and flexible free operating system for both newcomers and experienced users of Linux. It should run on most computers, ranging from 256MB old systems with pre-configured swap to the latest powerful boxes. 512MB RAM is the recommended minimum for antiX. Installation to hard drive requires a minimum 7.0GB hard disk size.</p></blockquote><p>（Windows看来是不能在Limbo上运行的；我安装后发现根本无法忍受启动的缓慢。）<br>言归正传，我们接下来就要开始在我们的移动设备上安装antiX Linux了！</p><h1 id="进入安装程序"><a href="#进入安装程序" class="headerlink" title="进入安装程序"></a>进入安装程序</h1><h2 id="模拟器的配置"><a href="#模拟器的配置" class="headerlink" title="模拟器的配置"></a>模拟器的配置</h2><p>打开Limbo，弹出的几个对话框自己看看内容，作出合理选择；接下来，从右上角写着“None”的下拉列表中选择“New”，创建一台新的虚拟机。<br>![完成后的截图](limbo-finished.jpg 完成配置后的Limbo)</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;本文介绍了在手机等移动设备上使用虚拟化技术运行antiX Linux——一个快速实用的Linux发行版——的方法。&lt;/p&gt;</summary>
     
     
     
-    <category term="虚拟机" scheme="https://zxunge.github.io/blogs/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-    <category term="移动设备" scheme="https://zxunge.github.io/blogs/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/"/>
+    <category term="移动设备" scheme="https://zxunge.github.io/blogs/categories/%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87/"/>
     
     
     <category term="Linux" scheme="https://zxunge.github.io/blogs/tags/Linux/"/>
@@ -50,9 +48,9 @@
     <link href="https://zxunge.github.io/blogs/2025/04/%E6%94%BE%E5%BC%83GitHub-%E8%AF%91%E8%87%AASoftware-Freedom-Conservancy/"/>
     <id>https://zxunge.github.io/blogs/2025/04/%E6%94%BE%E5%BC%83GitHub-%E8%AF%91%E8%87%AASoftware-Freedom-Conservancy/</id>
     <published>2025-04-20T07:49:37.000Z</published>
-    <updated>2025-04-28T15:11:33.609Z</updated>
+    <updated>2025-04-28T15:50:46.805Z</updated>
     
-    <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p><strong>本文观点及内容来自SFC；如翻译有出入，一概以原文为准。</strong> <br /></p><p>从2022年六月29日星期三开始，我们<a href="https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/">号召所有FOSS开发人员</a><strong>放弃GitHub</strong>。<br /><br><img src="/blogs/img/GiveUpGitHub.04a2974ac680.svg" alt="模拟GitHub的logo，他们从用户权利中压榨所希冀的金钱"><br>我们意识到这不是一件轻松的任务；GitHub无处不在。通过他们有效的营销手段，自由和开源软件(FOSS)开发人员们已确信GitHub是FOSS开发的最佳（甚至是唯一）之地。然而，作为一个专有的、商业秘密工具，GitHub本身其实正和FOSS针锋相对。相比之下，Git的设计目标便是<a href="http://www.h-online.com/open/features/The-saga-of-Git-Lightning-does-strike-twice-1051559.html">取代一个专有的工具 (BitKeeper）</a>并使FOSS开发人人共享——使用FOSS工具并抛弃一种集中化的站点。GitHub封装了Git——搞出一些额外的东西把一个共享的、平等的FOSS系统变成了集中的、专有的站点。而且这些东西还控制在一家专门的、营利性的公司手中。在GitHub上工作时，已有的FOSS社区又会把新手携带到这个专有的平台之上——更扩张了GitHub的地盘，也限制了下一代FOSS开发人员的想象力。<br /><br>我们知道许多人每天都依赖于GitHub。这个好用（尽管是专有的）的服务免费又无处不在，想要放弃确实很艰难。对软件开发者来说，放弃GitHub甚至比放弃Facebook还要难！我们并不责备那些还在犹豫的人，但我们希望您能一读下面所说的关于放弃GitHub的理由与方法，同时加入我们，寻找更好的替代方案！值得一提的是，我们会在整个2022年及以后的时间里都持续更新本文，请您定期回来看一看本页面！</p><h1 id="为什么放弃GitHub"><a href="#为什么放弃GitHub" class="headerlink" title="为什么放弃GitHub"></a>为什么放弃GitHub</h1><p>放弃GitHub有许多原因，我们只列出一些最重要的：<br /></p><ul><li><a href="https://github.com/features/copilot">Copilot是一个营利性的产品</a>——由微软和他们的GitHub子公司开发并销售——它使用人工智能（AI）技术交互式地自动为开发人员生成代码。该AI模型只使用GitHub上的项目进行了训练（<a href="https://github.blog/2021-06-30-github-copilot-research-recitation/">根据GitHub自己的说法</a>），这些项目多是以<a href="https://sfconservancy.org/copyleft-compliance/glossary.html#copyleft">版权向左</a>的许可证许可的。大多数项目并不在“公共域”中，它们受到<a href="https://opensource.org/licenses">FOSS许可证</a>的许可。这些许可证具有一些<em>要求</em>，包括合格的作者声明；对于<a href="https://copyleft.org/"><em>版权向左</em>的许可证</a>来说，它们有时还要求<em>基于</em>和&#x2F;或<em>包含</em>这个软件的项目使用同样版权向左的许可证。微软和GitHub忽略这些许可证的约束已经不止一年了。他们对这些行为的辩护只有<a href="https://twitter.com/natfriedman/status/1409914420579344385">来自前CEO的一篇推文</a>，其中他错误地表明有关这个问题的未决法律已经成为既定法律了。除法律问题外，GitHub为创建专有软件而<a href="https://sfconservancy.org/blog/2022/feb/03/github-copilot-copyleft-gpl/">使用版权向左的代码带来的道德影响</a>也十分严峻。</li><li>在2020年，社区发现<a href="https://www.theatlantic.com/technology/archive/2020/01/ice-contract-github-sparks-developer-protests/604339/">GitHub与美国移民及海关执法局（ICE）达成一项营利性软件服务合同</a>。积极分子和一些GitHub员工要求GitHub取消该合同已有两年时间。而GitHub的回复主要是，他们的父公司，微软，同样已向ICE售卖了很长时间的Microsoft Word也没有招致公众抱怨。他们认为，这在某种程度上可以作为与问题机构<em>加强</em>合作的理由。无论您对于ICE及其行为看法如何，GitHub一贯对那些提出这些重要问题的积极分子不屑一顾、骗人的答复态度反映出GitHub把利益放在社区的感受之上的本质。</li><li>尽管GitHub假装支持FOSS（就像<a href="https://lwn.net/Articles/17822/">他们之前的SourceForge</a>），他们的整个托管站点，或者说他们本身，却是专有软件和&#x2F;或商业秘密软件。我们也赞成GitHub允许一些员工将FOSS贡献给上游项目，但我们的社区已经被那些宣称支持FOSS却强迫社区使用他们的专有软件的公司侵扰了许多次。我们不会让GitHub再这样骗我们！</li><li>GitHub与大多数同类的FOSS项目托管产品不同，它甚至不提供任何自托管FOSS的机会。他们<em>整个的</em>代码库是私密的。例如，虽然我们抱怨GitLab这样同时推出“社区”和“企业”两种版本的销售模型，但至少GitLab的社区版提供了基本的自托管功能，并且是100%的FOSS。此外也有非营利性的FOSS托管站点如<a href="https://codeberg.org/">CodeBerg</a>，这些FOSS平台的开发是面向公众的。</li><li>GitHub长期公开地诋毁版权向左。它的几个CEO经常抹黑版权向左，比如他们的创始人（以及前任CEO）<a href="https://www.youtube.com/watch?v=-bAAlPXB2-c">在OSCON主题演讲中攻击过版权向左和GPL</a>。这种思想从他们的领导层就蔓延开来。我们亲眼见过一些GitHub员工常常竭力使项目避免版权向左；我们还曾<a href="https://github.com/BenKallos/legislation/issues/2#issue-46911010">见过一位GitHub员工直接在GitHub bug工单中干这种事</a>。</li><li>GitHub被全盘掌控在微软手中，这个公司以曾反复攻击版权向左的许可证而知名。</li></ul><h1 id="我如何放弃GitHub？"><a href="#我如何放弃GitHub？" class="headerlink" title="我如何放弃GitHub？"></a>我如何放弃GitHub？</h1><p>GitHub之所以如此难以放弃，其一便是上述问题之一所带来的负面影响：专有软件具有供应商锁定。</p>]]></content>
+    <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p><strong>本文观点及内容来自SFC；如翻译有出入，一概以原文为准。</strong> <br /></p><p>从2022年六月29日星期三开始，我们<a href="https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/">号召所有FOSS开发人员</a><strong>放弃GitHub</strong>。<br /><br><img src="/blogs/GiveUpGitHub.04a2974ac680.svg" alt="模拟GitHub的logo，他们从用户权利中压榨所希冀的金钱"><br>我们意识到这不是一件轻松的任务；GitHub无处不在。通过他们有效的营销手段，自由和开源软件(FOSS)开发人员们已确信GitHub是FOSS开发的最佳（甚至是唯一）之地。然而，作为一个专有的、商业秘密工具，GitHub本身其实正和FOSS针锋相对。相比之下，Git的设计目标便是<a href="http://www.h-online.com/open/features/The-saga-of-Git-Lightning-does-strike-twice-1051559.html">取代一个专有的工具 (BitKeeper）</a>并使FOSS开发人人共享——使用FOSS工具并抛弃一种集中化的站点。GitHub封装了Git——搞出一些额外的东西把一个共享的、平等的FOSS系统变成了集中的、专有的站点。而且这些东西还控制在一家专门的、营利性的公司手中。在GitHub上工作时，已有的FOSS社区又会把新手携带到这个专有的平台之上——更扩张了GitHub的地盘，也限制了下一代FOSS开发人员的想象力。<br /><br>我们知道许多人每天都依赖于GitHub。这个好用（尽管是专有的）的服务免费又无处不在，想要放弃确实很艰难。对软件开发者来说，放弃GitHub甚至比放弃Facebook还要难！我们并不责备那些还在犹豫的人，但我们希望您能一读下面所说的关于放弃GitHub的理由与方法，同时加入我们，寻找更好的替代方案！值得一提的是，我们会在整个2022年及以后的时间里都持续更新本文，请您定期回来看一看本页面！</p><h1 id="为什么放弃GitHub"><a href="#为什么放弃GitHub" class="headerlink" title="为什么放弃GitHub"></a>为什么放弃GitHub</h1><p>放弃GitHub有许多原因，我们只列出一些最重要的：<br /></p><ul><li><a href="https://github.com/features/copilot">Copilot是一个营利性的产品</a>——由微软和他们的GitHub子公司开发并销售——它使用人工智能（AI）技术交互式地自动为开发人员生成代码。该AI模型只使用GitHub上的项目进行了训练（<a href="https://github.blog/2021-06-30-github-copilot-research-recitation/">根据GitHub自己的说法</a>），这些项目多是以<a href="https://sfconservancy.org/copyleft-compliance/glossary.html#copyleft">版权向左</a>的许可证许可的。大多数项目并不在“公共域”中，它们受到<a href="https://opensource.org/licenses">FOSS许可证</a>的许可。这些许可证具有一些<em>要求</em>，包括合格的作者声明；对于<a href="https://copyleft.org/"><em>版权向左</em>的许可证</a>来说，它们有时还要求<em>基于</em>和&#x2F;或<em>包含</em>这个软件的项目使用同样版权向左的许可证。微软和GitHub忽略这些许可证的约束已经不止一年了。他们对这些行为的辩护只有<a href="https://twitter.com/natfriedman/status/1409914420579344385">来自前CEO的一篇推文</a>，其中他错误地表明有关这个问题的未决法律已经成为既定法律了。除法律问题外，GitHub为创建专有软件而<a href="https://sfconservancy.org/blog/2022/feb/03/github-copilot-copyleft-gpl/">使用版权向左的代码带来的道德影响</a>也十分严峻。</li><li>在2020年，社区发现<a href="https://www.theatlantic.com/technology/archive/2020/01/ice-contract-github-sparks-developer-protests/604339/">GitHub与美国移民及海关执法局（ICE）达成一项营利性软件服务合同</a>。积极分子和一些GitHub员工要求GitHub取消该合同已有两年时间。而GitHub的回复主要是，他们的父公司，微软，同样已向ICE售卖了很长时间的Microsoft Word也没有招致公众抱怨。他们认为，这在某种程度上可以作为与问题机构<em>加强</em>合作的理由。无论您对于ICE及其行为看法如何，GitHub一贯对那些提出这些重要问题的积极分子不屑一顾、骗人的答复态度反映出GitHub把利益放在社区的感受之上的本质。</li><li>尽管GitHub假装支持FOSS（就像<a href="https://lwn.net/Articles/17822/">他们之前的SourceForge</a>），他们的整个托管站点，或者说他们本身，却是专有软件和&#x2F;或商业秘密软件。我们也赞成GitHub允许一些员工将FOSS贡献给上游项目，但我们的社区已经被那些宣称支持FOSS却强迫社区使用他们的专有软件的公司侵扰了许多次。我们不会让GitHub再这样骗我们！</li><li>GitHub与大多数同类的FOSS项目托管产品不同，它甚至不提供任何自托管FOSS的机会。他们<em>整个的</em>代码库是私密的。例如，虽然我们抱怨GitLab这样同时推出“社区”和“企业”两种版本的销售模型，但至少GitLab的社区版提供了基本的自托管功能，并且是100%的FOSS。此外也有非营利性的FOSS托管站点如<a href="https://codeberg.org/">CodeBerg</a>，这些FOSS平台的开发是面向公众的。</li><li>GitHub长期公开地诋毁版权向左。它的几个CEO经常抹黑版权向左，比如他们的创始人（以及前任CEO）<a href="https://www.youtube.com/watch?v=-bAAlPXB2-c">在OSCON主题演讲中攻击过版权向左和GPL</a>。这种思想从他们的领导层就蔓延开来。我们亲眼见过一些GitHub员工常常竭力使项目避免版权向左；我们还曾<a href="https://github.com/BenKallos/legislation/issues/2#issue-46911010">见过一位GitHub员工直接在GitHub bug工单中干这种事</a>。</li><li>GitHub被全盘掌控在微软手中，这个公司以曾反复攻击版权向左的许可证而知名。</li></ul><h1 id="我如何放弃GitHub？"><a href="#我如何放弃GitHub？" class="headerlink" title="我如何放弃GitHub？"></a>我如何放弃GitHub？</h1><p>GitHub之所以如此难以放弃，其一便是上述问题之一所带来的负面影响：专有软件具有供应商锁定。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;本文是翻译自&lt;a href=&quot;https://sfconservancy.org/GiveUpGitHub/&quot;&gt;Software Freedom Conservancy&lt;/a&gt;的一篇文章，倡导了放弃GitHub的主张。&lt;/p&gt;</summary>
@@ -61,8 +59,8 @@
     
     <category term="外文集" scheme="https://zxunge.github.io/blogs/categories/%E5%A4%96%E6%96%87%E9%9B%86/"/>
     
-    <category term="软件工程" scheme="https://zxunge.github.io/blogs/categories/%E5%A4%96%E6%96%87%E9%9B%86/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
     
+    <category term="软件工程" scheme="https://zxunge.github.io/blogs/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
     
     <category term="GitHub" scheme="https://zxunge.github.io/blogs/tags/GitHub/"/>
     
@@ -77,7 +75,7 @@
     <link href="https://zxunge.github.io/blogs/2025/04/Hermes%E5%BC%95%E6%93%8E-Windows%E4%B8%8BGCC%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
     <id>https://zxunge.github.io/blogs/2025/04/Hermes%E5%BC%95%E6%93%8E-Windows%E4%B8%8BGCC%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</id>
     <published>2025-04-15T14:44:31.000Z</published>
-    <updated>2025-04-28T15:11:33.605Z</updated>
+    <updated>2025-04-28T15:50:46.801Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt -->]]></content>
     
@@ -86,9 +84,7 @@
     
     
     
-    <category term="软件工程" scheme="https://zxunge.github.io/blogs/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    <category term="编程语言" scheme="https://zxunge.github.io/blogs/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    <category term="编程语言" scheme="https://zxunge.github.io/blogs/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
     
     <category term="JavaScript" scheme="https://zxunge.github.io/blogs/tags/JavaScript/"/>
@@ -102,7 +98,7 @@
     <link href="https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/"/>
     <id>https://zxunge.github.io/blogs/2025/04/%E5%85%8D%E8%B4%B9%E3%80%81%E4%BE%BF%E6%8D%B7%E3%80%81%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%E8%BD%AF%E4%BB%B6-FreePictureSplitter%E4%BB%8B%E7%BB%8D/</id>
     <published>2025-04-06T14:51:29.000Z</published>
-    <updated>2025-04-28T15:11:33.601Z</updated>
+    <updated>2025-04-28T15:50:46.797Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --><!-- toc -->]]></content>
     
@@ -125,7 +121,7 @@
     <link href="https://zxunge.github.io/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/"/>
     <id>https://zxunge.github.io/blogs/2025/04/%E5%A6%82%E4%BD%95%E5%9C%A8Qt%E4%B8%AD%E7%94%A8Json%E4%BD%9C%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F%E4%B8%80%E4%B8%AA%E4%BE%BF%E6%8D%B7%E7%9A%84Qt-JSON%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%93%8D%E7%BA%B5%E7%B1%BB%EF%BC%81/</id>
     <published>2025-04-03T14:29:33.000Z</published>
-    <updated>2025-04-18T16:17:33.757Z</updated>
+    <updated>2025-04-28T15:50:46.797Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --><!-- toc --><p><strong>警告(WARNING)：本文已过时；该项目已更名为<a href="https://github.com/zxunge/ZXmlConfigUtil">ZXmlConfigUtil(XML版)</a></strong><br>QJSONConfig是我设计的一个JSON配置文件读写类，支持以一种简便的方式存取配置信息，同时采用JSON格式，小巧易读。它还支持嵌套配置信息存取，为复杂<br>信息的管理提供了有效的手段。内部与Qt5或6兼容，适合在Qt应用程序中使用</p><h1 id="获取和使用QJSONConfig"><a href="#获取和使用QJSONConfig" class="headerlink" title="获取和使用QJSONConfig"></a>获取和使用QJSONConfig</h1><p>获取是非常容易办到的，只需</p><pre><code class="language-bash">git clone https://github.com/zxunge/QJSONConfig.git</code></pre><p>然后，你可以将QJSONConfig复制到项目目录中，在源代码中包含qjsonconfig.h即可（记住要添加include路径哦）</p><h1 id="QJSONConfig的基本使用"><a href="#QJSONConfig的基本使用" class="headerlink" title="QJSONConfig的基本使用"></a>QJSONConfig的基本使用</h1><p>首先我们需要定义一个QJSONConfig对象：</p><pre><code class="language-cpp">QJSONConfig cfg(&quot;cfg.json&quot;);</code></pre><p>构造QJSONConfig时需要传递配置文件的名称。默认的名称是config.json。</p><p>接下来，我们需要读写配置内容。但是读者可能会问了，如果是第一次运行应用程序，那么怎么初始化相关配置呢？QJSONConfig已经为我们想好了。它提供了一个empty()用于判断配置是否为空：</p><pre><code class="language-cpp">if (cfg.empty())&#123;    // do stuff&#125;</code></pre><h2 id="配置信息的写入"><a href="#配置信息的写入" class="headerlink" title="配置信息的写入"></a>配置信息的写入</h2><p>写入配置信息时，有两种方式。官方推荐的，是采用setValue()：</p><pre><code class="language-cpp">cfg.setValue(&quot;key&quot;, value);</code></pre><p>这里的value是一个QVariant，具体支持的类型，可以见Variant types，这里列出了一些元类型对应的转换结果，可以作为支持类型的参考。如果没有提供value参数会怎样？key会被初始化成空值。</p><p>这里有个嵌套配置信息的使用。有时我们想把某些信息归类到某个东西底下，怎么办呢？使用斜杠：</p><pre><code class="language-cpp">cfg.setValue(&quot;app/name&quot;, &quot;auhu&quot;);cfg.setValue(&quot;app/style&quot;, &quot;fusion&quot;);cfg.setValue(&quot;app/style/file&quot;, &quot;sss.qss&quot;);</code></pre><p>这些信息也会以嵌套形式储存在json文件中。</p><p>另一种是使用[]运算符实现读写统一，但它有严重缺陷，感兴趣的读者可自行研究。</p><h2 id="配置信息的读取"><a href="#配置信息的读取" class="headerlink" title="配置信息的读取"></a>配置信息的读取</h2><p>读取配置信息最佳做法便是使用下标运算符：</p><pre><code class="language-cpp">QVariant value = cfg[&quot;key&quot;];int value = cfg[&quot;key&quot;].toInt();double value = cfg[&quot;key&quot;].toDouble();QString value = cfg[&quot;key&quot;].toString();// .........</code></pre><p>要注意的是，取下标得到的结果是QVariant，必要时需要调用相关toXXX()实现类型转换。</p><p>使用getValue()也可达到同样效果：</p><pre><code class="language-cpp">QVariant value = cfg.getValue(&quot;key&quot;);int value = cfg.getValue(&quot;key&quot;).toInt();double value = cfg.getValue(&quot;key&quot;).toDouble();QString value = cfg.getValue(&quot;key&quot;).toString();// .........</code></pre><p>嵌套信息的读取，使用斜杠即可。</p><p>getValue()第二个参数是默认值，表明当没有key时的返回值。</p><h2 id="配置文件的保存与清除"><a href="#配置文件的保存与清除" class="headerlink" title="配置文件的保存与清除"></a>配置文件的保存与清除</h2><p>sync()函数用于同步配置信息（这不仅是代码→文件，也是文件→代码）：</p><pre><code class="language-cpp">cfg.sync();</code></pre><p>clear()则清除所有内容：</p><pre><code class="language-cpp">cfg.clear();// All is gone...</code></pre><p><strong>限于时间，更多内容请见仓库里的demo！欢迎issue，和PR！</strong></p>]]></content>
     
@@ -148,7 +144,7 @@
     <link href="https://zxunge.github.io/blogs/2025/04/Code-Blocks-25-03%E9%87%8D%E7%A3%85%E6%9D%A5%E8%A2%AD%EF%BC%9A%E8%89%AF%E4%B9%85%E7%9A%84%E7%A7%AF%E7%B4%AF%EF%BC%8C%E5%B4%AD%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD/"/>
     <id>https://zxunge.github.io/blogs/2025/04/Code-Blocks-25-03%E9%87%8D%E7%A3%85%E6%9D%A5%E8%A2%AD%EF%BC%9A%E8%89%AF%E4%B9%85%E7%9A%84%E7%A7%AF%E7%B4%AF%EF%BC%8C%E5%B4%AD%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD/</id>
     <published>2025-04-03T11:15:50.000Z</published>
-    <updated>2025-04-28T15:11:33.601Z</updated>
+    <updated>2025-04-28T15:50:46.793Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --><p>时隔5年，Code::Blocks，这一开源的C&#x2F;C++、Fortran IDE，尤长于开发wxWidgets应用程序，终于发布了新版：25.03。就在前几十个小时里，Code::Blocks官方宣布了这一消息。</p><p>话不多说，先上链接：<a href="https://forums.codeblocks.org/index.php/topic,25992.msg177095/topicseen.html#msg177095">Release 25.03 has arrived</a></p><blockquote><p>Code::Blocks is a free C&#x2F;C++ and Fortran IDE built to meet the most demanding needs of its users. It is designed to be very extensible and fully configurable.</p></blockquote><blockquote><p>Built around a plugin framework, Code::Blocks can be extended with plugins. Any kind of functionality can be added by installing&#x2F;coding a plugin. For instance, event compiling and debugging functionality is provided by plugins!</p></blockquote>]]></content>
     
@@ -158,8 +154,6 @@
     
     
     <category term="程序设计" scheme="https://zxunge.github.io/blogs/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="软件" scheme="https://zxunge.github.io/blogs/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%BD%AF%E4%BB%B6/"/>
     
     
     <category term="CodeBlocks" scheme="https://zxunge.github.io/blogs/tags/CodeBlocks/"/>
