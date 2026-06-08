@@ -1,139 +1,109 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>万顷茫然（ZYH）的个人网站</title>
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css" />
-<link rel="stylesheet" href="css/main.css" />
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="万顷茫然的小站 - Grit Clef (zxunge) 的个人主页，展示开源项目与技术分享。">
+    <meta name="author" content="Grit Clef">
+    <meta name="keywords" content="zxunge, Grit Clef, FreePictureSplitter, 图片分割软件, 开源项目, 个人主页, GitHub">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0f1a">
+    <meta property="og:title" content="万顷茫然的小站 - Grit Clef">
+    <meta property="og:description" content="Grit Clef (zxunge) 的个人主页，探索开源项目与技术世界。">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="万顷茫然的小站">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="万顷茫然的小站 - Grit Clef">
+    <meta name="twitter:description" content="Grit Clef (zxunge) 的个人主页，探索开源项目与技术世界。">
+    <title>万顷茫然的小站 - Grit Clef (zxunge)</title>
+    <link rel="canonical" href="https://github.com/zxunge">
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+    <!-- 跳过导航链接（可访问性） -->
+    <a href="#main-content" class="skip-link" aria-label="跳过导航，直达主要内容">跳至主内容</a>
 
-<body class="background">
-<nav class="navbar navbar-default">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="src/me.html">我</a> </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">软件<span class="sr-only">(current)</span></a></li>
-        <li class="dropdown"> <a href="src/contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">联系我 <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <!-- ==================== 导航栏 ==================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="主导航">
+        <div class="navbar-inner">
+            <a href="/" class="navbar-brand" aria-label="万顷茫然的小站 - 返回首页" title="万顷茫然的小站">
+                万顷茫然的小站
+            </a>
+            <ul class="navbar-links">
+                <li>
+                    <a href="https://github.com/zxunge" target="_blank" rel="noopener noreferrer" class="nav-external" aria-label="访问 GitHub 主页（新窗口打开）">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="./blogs/" aria-label="访问博客（位于 blogs 子文件夹）">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+                        博客
+                    </a>
+                </li>
+            </ul>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-</div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-<section>
-  <div class="jumbotron text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs12">
-          <h1>FreePictureSplitter</h1>
-          <p>FreePictureSplitter是一个快捷的图片分割软件，采用了wxWidgets 3库。</p>
-          <p><a class="btn btn-primary btn-lg" href="http://github.com/zxunge/FreePictureSplitter" role="button">了解更多 »</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<section>
-	<div class="container">
-		<div class="row">
-        	<div class="col-lg-12 text-center">
-            	<h2>近期项目</h2>
-            	<p>FreePictureSplitter是一个快捷的图片分割软件，采用了wxWidgets 3库。</p>
+    <!-- ==================== 主内容区 ==================== -->
+    <main id="main-content" tabindex="-1">
+        <!-- 页头：艺术字"万顷茫然的小站" -->
+        <header class="page-header fade-in-up" aria-labelledby="art-title-heading">
+            <div class="art-title-wrapper">
+                <h1 class="art-title" id="art-title-heading">万顷茫然的小站</h1>
+                <span class="art-subtitle">纵一苇之所如，凌万顷之茫然</span>
+            </div>
+        </header>
+
+        <!-- 横幅：活跃项目展示 -->
+        <section class="hero-section fade-in-up fade-in-up-delay-1" aria-labelledby="hero-project-heading">
+            <a href="https://github.com/zxunge/FreePictureSplitter"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hero-card"
+               aria-label="查看活跃项目 FreePictureSplitter - 简单易用的图片分割软件（新窗口打开）"
+               title="访问 FreePictureSplitter 项目仓库">
+                <span class="hero-badge">🌟 活跃项目</span>
+                <h2 class="hero-title" id="hero-project-heading">FreePictureSplitter</h2>
+                <p class="hero-description">
+                    简单易用的图片分割软件，轻松将大图切割为多个部分，支持自定义分割参数，让图片处理更加高效便捷。
+                </p>
+                <span class="hero-arrow">
+                    探索项目
+                    <span class="arrow-icon" aria-hidden="true">→</span>
+                </span>
+            </a>
+        </section>
+
+        <!-- 可扩展内容区 -->
+        <section class="content-section fade-in-up fade-in-up-delay-2" aria-label="可扩展内容区域">
+            <div class="content-placeholder" role="status" aria-label="更多内容即将上线">
+                ✨ 更多精彩内容即将呈现，敬请期待……
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== 页脚 ==================== -->
+    <footer class="site-footer" role="contentinfo" aria-label="页脚联系信息">
+        <div class="footer-inner">
+            <div class="footer-info">
+                <span>📧 <a href="mailto:3396563372@qq.com" aria-label="发送邮件至 3396563372@qq.com">3396563372@qq.com</a></span>
+                <span aria-hidden="true">|</span>
+                <span>
+                    <a href="https://github.com/zxunge" target="_blank" rel="noopener noreferrer" aria-label="访问 GitHub 主页 zxunge（新窗口打开）">
+                        GitHub: zxunge
+                    </a>
+                </span>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year">2026</span> <strong>Grit Clef</strong> — 万顷茫然的小站
             </div>
         </div>
-        <div class="row">
-        	<div class="col-md-6 text-center">
-            	<img src="img/400x400.gif" alt="">
-                <h3>FreePictureSplitter</h3>
-                <h6>FreePictureSplitter是一个快捷的图片分割软件，采用了wxWidgets 3库。</h6>
-            </div>
-        </div>
-        <div class="row">
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="img/200x200.gif" alt=""></div>
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="img/200x200.gif" alt=""></div>
-			<div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="img/200x200.gif" alt=""></div>
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="img/200x200.gif" alt=""></div>
-      </div>
-      <hr>
-        <div class="row">
-          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="img/200x200.gif" alt=""></div>
-          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="img/200x200.gif" alt=""></div>
-          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="img/200x200.gif" alt=""></div>
-          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="img/200x200.gif" alt=""></div>
-        </div>
-	</div>
-</section>
-<hr>
-<hr>
-<div class="section well">
-    <div class="container">
-   	  <div class="row">
-		<div class="col-lg-4 col-md-4">
-            <h3 class="text-center">自我介绍</h3>
-            <h5>我叫：（万顷茫然 ZYH），或者：（zxunge Grit Clef）, 是一名科学爱好者。</h5>
-        </div>
-		<div class="col-lg-4 col-md-4">
-		  <h3 class="text-center">联系我</h3>
-          <address class="text-center">
-  <strong>GritClef@qq.com, 或 GritClef@163.com, 或 GritClef01@outlook.com</strong><br>
-</address>
-</div>
-		<div class="col-lg-4 col-md-4">
-		  <h3 class="text-center">NEWSLETTER</h3>
-          <form>
-    <div class="form-group col-lg-9 col-md-8 col-sm-10 col-xs-10">
-<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    </div>
-<button type="submit" class="btn btn-default">Subscribe<br>
-</button>
-</form>
-		</div>
-</div>
-    </div>
-	</div>
-    <footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>版权所有 &copy; 2024 万顷茫然</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="js/jquery-1.11.2.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+    </footer>
+
+    <!-- 外部JavaScript（defer保证DOM加载后执行） -->
+    <script src="js/script.js" defer></script>
 </body>
 </html>
